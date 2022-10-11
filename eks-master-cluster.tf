@@ -22,7 +22,7 @@ resource "aws_subnet" "subnet-1" {
 }
 
 resource "aws_instance" "eks-master" {
-  ami_type          = "AL2_x86_64"
+  ami               = "ami-026b57f3c383c2eec"
   instance_type     = "t3.small"
   availability_zone = "us-east-1a"
   key_name          = "verginiats"
